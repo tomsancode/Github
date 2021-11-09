@@ -1,0 +1,12 @@
+*{
+  font-family: sans-serif;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  margin-left:5%;
+  margin-right:5%;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,370 @@
+
+/*frost glass
+
+background-color: rgba(255,255,255,.15);
+backdrop-filter: blur(5px);
+
+frost glass*/
+/* COLORS
+
+#F3B700 ORANGE YELLOW
+#DAD2D8 LIGHT GRAY
+#143642 GUNMETAL
+#0F8B8D DARK CYAN
+#A8201A CARNELIAN RED
+
+COLORS */
+
+
+/******************************
+        DESKTOP STYLE
+  @media screen min-width(861px);
+*******************************/
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+body{
+  background-color: #DAD2D8;
+  overflow-x: hidden;
+	overflow-y: auto;
+
+}
+h1{
+  font-size: 4vw;
+}
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+  line-height: 1;
+}
+#logotext{
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+#logotext:hover{
+  transform: scale(1.05);
+}
+main{
+  margin: 3% 10% 3% 10%;
+  background-color: #F3B700;
+
+}
+
+/***********************
+        HEADER
+***********************/
+.nav-head-wrapper{
+  background-color: #0F8B8D;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+}
+.logotext{
+  padding-top: 20px;
+  padding-left: 50px;
+
+}
+.navbar{
+  display: flex;
+  padding-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a{
+
+  font-weight: 600;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+.navbar a:hover{
+  transform: scale(1.05);
+}
+/***********************
+        CONTENT
+***********************/
+.content-wrapper{
+  display: flex;
+  padding: 100px 50px;
+  animation-name: opacity;
+  animation-duration: 2s;
+  justify-content: space-around;
+}
+/***********************
+        CONTENT #1
+***********************/
+.content-1{
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 50px;
+  padding-left: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  animation: slideUp .8s ease forwards 0s;
+
+}
+.content-1-s{
+  display: flex;
+  flex-grow: 2;
+  flex-flow: column wrap;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  animation: slideUp .8s ease forwards 0s;
+  justify-content: center;
+  align-items: center;
+
+}
+.pict-container-s{
+  display: flex;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+#studypict{
+  border-radius: 50%;
+  height: 70%;
+  width: 70%;
+}
+/***********************
+CONTENT #2 MAIN CONTAINER
+***********************/
+.content-2{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-left: 50px;
+  animation: slideUp .6s ease forwards 0s;
+}
+.content-2 p{
+  font-style: italic;
+}
+/***********************
+CONTENT #2 PROFILE HOME
+***********************/
+.pict-container{
+
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background-color: #DAD2D8;
+}
+#profpict{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+/***********************
+    CONTENT 2 STUDY
+***********************/
+.content-2-s{
+  position: relative;
+  flex-grow: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation: slideUp .8s ease forwards 0s;
+}
+.content-2-s-line{
+  border-right: 2px solid black;
+  left: 16px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+
+}
+.content-2-s-items{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+.content-2-s-stuff{
+  margin-bottom: 8px;
+
+}
+.content-2-s-top{
+  align-items: center;
+  display: flex;
+
+}
+.content-2-s-circle{
+  background-color: black;
+  border-radius: 9999px;
+  height: 20px;
+  width: 20px;
+  margin-left: 2px;
+}
+.content-2-s-title{
+  flex: 1;
+  margin-left: 5px;
+
+}
+.content-2-s-desc{
+
+  margin-left: 27px;
+  margin-top: 0;
+}
+/***********************
+    ACTIVITY CONTENT
+***********************/
+.content-wrapper-a{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 100px 50px;
+  animation-name: opacity;
+  animation-duration: 2s;
+  justify-content: space-around;
+}
+.content-a{
+  padding-top:20px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation: slideUp .8s ease forwards 0s;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.object-container-a{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gif-container{
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 5%;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+
+  object-fit: cover;
+}
+.top-activity{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  text-align:center;
+}
+.top-activity h3{
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 900;
+}
+.content-a-wrap{
+  display: flex;
+  padding-top: 10px;
+}
+
+#gifs{
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+/***********************
+    ACTIVITY CONTENT
+***********************/
+
+/***********************
+        FOOTER
+***********************/
+.footer-wrapper{
+  background-color: #0F8B8D;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-content{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color: white;
+
+}
+.copyright{
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+.copyright p{
+  font-size: 12px;
+}
+.footer-content a{
+  text-decoration: none;
+  color: white;
+  text-align: left;
+
+}
+.footer-content p{
+  text-align: left;
+}
+#social{
+  max-width: 50px;
+  max-height: 50px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+
+}
+#social:hover{
+  transform: scale(1.15);
+}
+.social-container{
+  display: flex;
+}
+.link-wrapper{
+  display:flex;
+  flex-flow: column wrap;
+}
+/***********************
+        FOOTER
+***********************/
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%
+  }
+}
+  @keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes opacity{
+  from{opacity: 0;}
+  to{opacity: 100;}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mouse Over</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p>This example demeonstrates how to assign an "onmouseover" and "onmouseout" event</p>
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+    Mouse over me!</h1>
+
+    <h1 id="demo2">Ninja Element</h1>
+    <button type="button"
+    onclick="document.getElementById('demo2').style.display='none'">Hide me!</button>
+    <button type="button"
+    onclick="document.getElementById('demo2').style.display='block'">Display me!</button>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+    style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+    <p>Click Me</p></div>
+
+    <script>
+      function mouseOver(){
+        document.getElementById("demo").style.color="red";
+      }
+      function mouseOut(){
+        document.getElementById("demo").style.color="black";
+      }
+      function mDown(obj){
+        obj.style.backgroundColor="#1ec5e5";
+        obj.innerHTML="Release me";
+      }
+      function mUp(obj){
+        obj.style.backgroundColor="#d94a38";
+        obj.innerHTML="Click me";
+      }
+    </script>
+
+  </body>
+</html>

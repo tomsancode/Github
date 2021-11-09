@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Demo : JavaScript Variables without var</h1>
+    <p id="p1"></p>
+
+    <script>
+      function myfunction(){
+        msg="Hello Javascript!";
+      }
+      myfunction();
+      msg="msg changed"
+      document.getElementById("p1").innerHTML=msg;
+    </script>
+
+  </body>
+</html>
