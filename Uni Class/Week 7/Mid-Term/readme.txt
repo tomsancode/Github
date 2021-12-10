@@ -1,1 +1,0 @@
-Bisa dimulai dari page mana saja, disarankan dari home.
